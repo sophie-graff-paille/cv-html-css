@@ -1,0 +1,88 @@
+/**/
+
+ul li {
+    list-style-type: circle;
+}
+
+h3 {
+    background-color: #113803;
+    color: chartreuse;
+    margin-left: 5%;
+}
+
+.imgDeMoi{
+    margin-top: 25%;
+    margin-left: 9%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "left-column right-column right-column";
+    width: 60%;
+    margin: auto;
+}
+
+.left-column{
+    grid-area: left-column;
+    display: grid;
+    grid-template-rows: 50% 1fr;
+    grid-template-areas: 
+        "vide"
+        "coordonnées";
+    background-color: rgb(139, 144, 237);
+    color: rgb(64, 9, 136);
+}
+
+.right-column{
+    justify-content: center;
+    grid-area: right-column;
+    display: grid;
+    margin-left: 2%;
+    grid-template-rows: 80% 2fr;
+    grid-template-areas: 
+        "parcours"
+        "loisirs";
+    background-color: olive;
+    color: #113803;
+}
+
+.parcours {
+    grid-area: parcours;
+}
+
+.loisirs {
+    grid-area: loisirs;
+}
+
+.coordonnées {
+    grid-area: coordonnées;
+}
+
+.infos {
+    grid-area: infos;
+    list-style-type: none;
+    margin-top: 30%;
+    margin-left: 10%;
+    font-style: italic;
+}
+
+
+a {
+    color: chartreuse;
+}
+
+li {
+    font-family: 'Comfortaa' , cursive;
+    font-weight: 300;
+}
+
+ul {
+    font-family: 'Comfortaa' , cursive;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Comfortaa' , cursive;
+    font-weight: 300;
+}
